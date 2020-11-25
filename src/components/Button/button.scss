@@ -1,0 +1,16 @@
+.button {
+  width: calc(25% - 10px);
+  height: 90px;
+  margin: 5px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,13 @@
+.app {
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app img {
+  max-width: 150px;
+}

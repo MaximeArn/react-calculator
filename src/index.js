@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import App from 'src/components/App';
+import App from 'src/components/Calculator/Calculator.js';
 
 const rootReactElement = <App />;
 
