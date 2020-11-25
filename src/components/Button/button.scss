@@ -2,11 +2,20 @@
   width: calc(25% - 10px);
   height: 90px;
   margin: 5px;
-  background-color: #222;
+  background-color: rgb(46, 46, 46);
   color: #fff;
+  border-radius: 10px;
   display: flex;
+  font-weight: bold;
   text-align: center;
   justify-content: center;
+  box-shadow: 5px 5px 18px 0 rgba(0, 0, 0, 0.2),
+    -5px -5px 18px 0 rgba(29, 29, 29, 0.2);
+
+  &:active {
+    box-shadow: inset 3px 3px 24px 0 rgba(0, 0, 0, 0.15),
+      inset -3px -3px 24px 0 rgba(22, 22, 22, 0.4);
+  }
 
   p {
     display: flex;
