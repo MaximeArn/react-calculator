@@ -11,3 +11,17 @@
 .app img {
   max-width: 150px;
 }
+
+.screen {
+  width: 100%;
+  margin: 0 5px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #222;
+  color: #fff;
+  padding: 2rem;
+  text-align: right;
+  font-size: 3em;
+}
