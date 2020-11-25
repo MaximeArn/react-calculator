@@ -9,7 +9,7 @@ const App = () => {
   return(
   <div className="app">
     <p className="screen">0=10/5</p>
-   {buttons.map((value) => <Button value={value} />)}
+   {buttons.map((value) => <Button value={value} number={!isNaN(value)} />)}
   </div>
 )};
 
