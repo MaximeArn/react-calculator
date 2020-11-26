@@ -11,6 +11,10 @@ const App = () => {
     const value = keyPressed.querySelector('p') 
     ? keyPressed.querySelector('p').textContent
     : keyPressed.textContent
+
+    value ==="C"
+    ? setScreenText("")
+    : setScreenText(screenText + value)
   };
 
   return(
