@@ -4,12 +4,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s;
 }
 
 .light {
   background-color: #ccc;
   .screen {
     background-color: #ccc;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    color: rgb(46, 46, 46);
   }
   .theme-icon {
     color: rgb(40, 153, 68);
@@ -19,7 +22,10 @@
 .dark {
   background-color: rgb(46, 46, 46);
   .screen {
+    box-shadow: 5px 5px 18px 0 rgba(0, 0, 0, 0.2),
+      -5px -5px 18px 0 rgba(29, 29, 29, 0.5);
     background-color: #222;
+    color: #fff;
   }
   .theme-icon {
     color: #ccc;
@@ -46,18 +52,16 @@
 }
 
 .screen {
+  transition: all 0.5s;
   width: calc(100% - 10px);
   margin: 0 5px 5px;
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  color: #fff;
   padding: 2rem;
   text-align: right;
   font-size: 3em;
-  box-shadow: 5px 5px 18px 0 rgba(0, 0, 0, 0.2),
-    -5px -5px 18px 0 rgba(29, 29, 29, 0.5);
   border-radius: 10px;
   letter-spacing: 5px;
   border: 2px solid rgb(40, 153, 68);
