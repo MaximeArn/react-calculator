@@ -4,11 +4,13 @@
   top: 50%;
   left: 50%;
   width: 400px;
+  height: auto;
 }
 
 .buttons-wrapper {
   display: flex;
   flex-flow: row wrap;
+  height: 500px;
 }
 
 .app img {
@@ -16,7 +18,7 @@
 }
 
 .screen {
-  width: 100%;
+  width: calc(100% - 10px);
   margin: 0 5px 5px;
   height: 200px;
   display: flex;

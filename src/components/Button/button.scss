@@ -66,4 +66,9 @@
 
 .symbol {
   background-color: rgb(218, 150, 25);
+
+  &:active {
+    box-shadow: inset 6px 6px 24px 0 rgba(0, 0, 0, 0.7),
+      inset -6px -6px 24px 0 rgba(22, 22, 22, 0.4);
+  }
 }
