@@ -1,3 +1,31 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light {
+  background-color: #ccc;
+  .screen {
+    background-color: #ccc;
+  }
+  .theme-icon {
+    color: rgb(40, 153, 68);
+  }
+}
+
+.dark {
+  background-color: rgb(46, 46, 46);
+  .screen {
+    background-color: #222;
+  }
+  .theme-icon {
+    color: #ccc;
+  }
+}
+
 .app {
   transform: translate(-50%, -50%);
   position: fixed;
@@ -24,7 +52,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #222;
   color: #fff;
   padding: 2rem;
   text-align: right;
@@ -33,4 +60,12 @@
     -5px -5px 18px 0 rgba(29, 29, 29, 0.5);
   border-radius: 10px;
   letter-spacing: 5px;
+  border: 2px solid rgb(40, 153, 68);
+}
+
+.theme-icon {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.4em;
 }
