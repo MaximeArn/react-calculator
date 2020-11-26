@@ -12,9 +12,16 @@ const App = () => {
     ? keyPressed.querySelector('p').textContent
     : keyPressed.textContent
 
-    value ==="C"
+    value === "C"
     ? setScreenText("")
-    : setScreenText(screenText + value)
+    : value === "=" 
+      ? calculateResult()
+      : setScreenText(screenText + value)
+  };
+
+  const calculateResult = () => {
+    const cleanifiedText = screenText.replaceAll('÷','/').replaceAll(',','.')
+    setScreenText(eval(cleanifiedText).toFixed(2))
   };
 
   return(
