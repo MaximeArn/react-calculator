@@ -4,8 +4,11 @@
   top: 50%;
   left: 50%;
   width: 400px;
+}
+
+.buttons-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .app img {

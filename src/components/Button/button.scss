@@ -17,6 +17,46 @@
       inset -3px -3px 24px 0 rgba(22, 22, 22, 0.4);
   }
 
+  &[value="C"],
+  &[value=","],
+  &[value="-"],
+  &[value="+"] {
+    order: -2;
+  }
+
+  &[value="9"],
+  &[value="8"],
+  &[value="7"] {
+    order: -1;
+  }
+
+  &[value="6"],
+  &[value="5"],
+  &[value="4"] {
+    order: 1;
+  }
+
+  &[value="*"] {
+    order: 2;
+  }
+
+  &[value="3"],
+  &[value="2"],
+  &[value="1"] {
+    order: 3;
+  }
+
+  &[value="0"] {
+    width: calc(75% - 10px);
+    order: 4;
+  }
+
+  &[value="="] {
+    height: 190px;
+    order: 5;
+    transform: translateY(calc(-50% -5px));
+  }
+
   p {
     display: flex;
     justify-content: center;
